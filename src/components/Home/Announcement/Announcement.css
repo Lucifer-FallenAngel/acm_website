@@ -1,0 +1,88 @@
+/* General styles */
+.announcement-container {
+  width: 98%;
+  max-height: 400px; /* Adjust height as needed */
+  overflow-y: auto;
+  background-color: #2c2f48; /* Background color to match */
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-title {
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.announcement-item {
+  display: flex;
+  align-items: center;
+  background-color: #d9d9d9;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.announcement-image {
+  width: 80px;
+  height: auto;
+  margin-right: 1rem;
+  border-radius: 5px;
+}
+
+.announcement-text {
+  color: #000000; /* Set text color to black */
+  flex: 1;
+}
+
+.announcement-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Buttons */
+.announcement-button {
+  background-color: #2c2f48;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.announcement-button:hover {
+  background-color: #1f2236;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .announcement-item {
+      flex-direction: column; /* Stack content vertically */
+      align-items: center; /* Center all content */
+  }
+
+  .announcement-image {
+      margin-right: 0; /* Remove right margin */
+      margin-bottom: 1rem; /* Add spacing below the image */
+      align-self: center; /* Ensure image is centered */
+  }
+
+  .announcement-text {
+      text-align: center; /* Center-align text */
+  }
+
+  .announcement-buttons {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 0.5rem; /* Reduce gap between buttons */
+      width: 100%; /* Ensure buttons span the container width */
+  }
+
+  .announcement-button {
+      width: 100%; /* Buttons take up full width */
+      text-align: center;
+  }
+}

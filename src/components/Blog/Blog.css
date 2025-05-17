@@ -1,0 +1,49 @@
+/* src/components/Blog/Blog.css */
+.blog-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #282D40; /* Set background color */
+    min-height: 100vh;
+  }
+  
+  .blog-section h1 {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .blog-item {
+    width: 200px;
+    text-align: center;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .blog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .blog-title {
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  

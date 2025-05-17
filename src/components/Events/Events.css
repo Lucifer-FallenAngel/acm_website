@@ -1,0 +1,70 @@
+.events-page {
+  padding: 20px;
+  text-align: center;
+  background-color: #1c1e26;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.events-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.year-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.year-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #3a3f51;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.year-button.active,
+.year-button:hover {
+  background-color: #6272a4;
+}
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.event-card {
+  background-color: #3a3f51;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+.event-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.event-title {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #44475a;
+}

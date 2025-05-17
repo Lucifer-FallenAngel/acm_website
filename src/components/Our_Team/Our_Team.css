@@ -1,0 +1,71 @@
+.our-team {
+    text-align: center;
+    background-color: #1a1a2e;
+    color: white;
+    padding: 20px;
+  }
+  
+  .team-heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .year-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .year-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .year-button.active {
+    background-color: white;
+    color: #1a1a2e;
+  }
+  
+  .section-heading {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .faculty-section,
+  .student-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .member-card {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .member-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .member-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+  
+  .member-role {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+

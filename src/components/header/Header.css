@@ -1,0 +1,64 @@
+/* General Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+}
+
+/* Group DIET and ACM logos together */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the logos */
+}
+
+.logo {
+  height: 80px;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+/* Hide navigation links on smaller screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column; /* Vertical layout for links */
+    position: absolute;
+    top: 60px; /* Below the header */
+    right: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 5; /* Ensure header doesn't overlap the menu */
+  }
+
+  .nav-links.open {
+    display: flex; /* Show navigation when menu is open */
+  }
+
+  .menu-button {
+    display: block; /* Show menu button */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+
+
+/* Hide menu button on larger screens */
+@media (min-width: 769px) {
+  .menu-button {
+    display: none;
+  }
+
+}
+

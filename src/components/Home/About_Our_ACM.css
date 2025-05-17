@@ -1,0 +1,46 @@
+/* General Styles for the Section */
+section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    flex-wrap: wrap; /* Allow content to wrap for smaller screens */
+  }
+  
+  section img {
+    width: 350px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  
+  section div {
+    max-width: 72%;
+  }
+  
+  section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    justify-items: center;
+  }
+  
+  section p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 730px) {
+    section {
+      flex-direction: column; /* Stack content vertically */
+      text-align: center;
+    }
+    section div {
+        max-width: 100%;
+      }
+   
+    section img {
+      margin-right: 0; /* Remove margin on the right */
+      margin-bottom: 20px; /* Add margin below the image */
+    }
+  }
+  
